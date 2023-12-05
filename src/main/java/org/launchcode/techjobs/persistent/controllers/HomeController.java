@@ -73,9 +73,7 @@ public class HomeController {
             selectedEmployer = employer.get();
             newJob.setEmployer(selectedEmployer);
         }
-//        } else {
-//            throw new NoSuchElementException("Employer with ID " + employerId + "not found.");
-//        }
+
 
         List<Skill> skillObjs = (List<Skill>) skillRepository.findAllById(skills);
         newJob.setSkills(skillObjs);
